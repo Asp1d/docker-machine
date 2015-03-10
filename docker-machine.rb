@@ -1,4 +1,4 @@
-cask :v1 => 'docker-machine' do
+class DockerMachine < Formula
   version 'v0.1.0'
   sha256 '9915d88f779915aa7f1d7ba2537433b15665030574d61b9e348dd1f7397606c4'
 
