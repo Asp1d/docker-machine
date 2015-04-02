@@ -10,5 +10,5 @@ version ```0.0.2-rc3```
 
 There is a Homebrew tap with a formula which can be installed with:
 
-brew tap homebrew-docker-machine
-brew install docker-machine-rc
+    brew tap homebrew-docker-machine
+    brew install docker-machine-rc
