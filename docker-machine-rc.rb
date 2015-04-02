@@ -1,4 +1,4 @@
-class DockerMachineRC < Formula
+class DockerMachine < Formula
   homepage "https://github.com/docker/machine"
   version "v0.2.0-rc3"
   url "https://github.com/docker/machine/releases/download/#{version}/docker-machine_darwin-amd64"
