@@ -1,18 +1,11 @@
 class DockerMachine < Formula
-  version 'v0.1.0'
-  sha256 '9915d88f779915aa7f1d7ba2537433b15665030574d61b9e348dd1f7397606c4'
-
+  homepage "https://github.com/docker/machine"
+  version "v0.2.0-rc3"
   url "https://github.com/docker/machine/releases/download/#{version}/docker-machine_darwin-amd64"
-  name 'Docker Machine'
-  homepage 'https://docs.docker.com/machine'
-  license :apache
-
-  container :type => :naked
-  binary 'docker-machine_darwin-amd64', :target => 'docker-machine'
-
-  postflight do
-    system '/bin/chmod', '--', '0755', "#{staged_path}/docker-machine_darwin-amd64"
+  sha1 "daecfe7e86a7c6a8dc444e03c5527f9db36b9c3e"
+  def install
+    system "mv docker-machine_darwin-amd64 docker-machine"
+    system "chmod +x docker-machine"
+    bin.install "docker-machine"
   end
-
-  depends_on :arch => :x86_64
 end
