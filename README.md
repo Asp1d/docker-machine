@@ -4,7 +4,7 @@ brew tap for docker-machine
 
 mavericks only
 
-version ```0.0.2-rc3```
+version ```0.2.0```
 
 ## Installing with Homebrew (Mac)
 
